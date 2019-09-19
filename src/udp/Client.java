@@ -13,7 +13,7 @@ public class Client {
         byte[] buf = new byte[100];
         int arr[] = new int[3];
         for (int i = 0; i < arr.length; i++) {
-            System.out.print("Enter element "+ i + "]:");
+            System.out.print("Enter element ["+ i + "]:");
             int k = System.in.read(buf);
             dp = new DatagramPacket(buf, k, loc, 12345);
             st.send(dp);
